@@ -1,0 +1,14 @@
+#footer{
+  @include background-gradient(#39459b,#0f97d5);
+  background: linear-gradient(to right bottom);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
