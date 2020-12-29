@@ -1,15 +1,15 @@
-#banner{
-  @include background-gradient(#39459b,#0f97d5);
+#banner {
+  @include background-gradient(#39459b, #0f97d5);
   background: linear-gradient(to right bottom);
   position: relative;
   padding: 10rem 0 2rem;
-  @include max-breakpoint(1199){
+  @include max-breakpoint(1199) {
     padding-bottom: 5rem;
-  } 
-  @include max-breakpoint(991){
+  }
+  @include max-breakpoint(991) {
     padding-bottom: 13rem;
-  }  
-  &::before{
+  }
+  &::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -18,41 +18,43 @@
     z-index: 1;
     background-size: 100% 100% !important;
     padding-top: 15rem;
-    background: url(../../../images/top-img-shape.png);
+    background: url("../../../images/top-img-shape.png");
   }
-  .banner__info{
-    @include max-breakpoint(992){
+  .banner__info {
+    @include max-breakpoint(992) {
       text-align: center;
     }
     padding-top: 60px;
     vertical-align: baseline;
-    h1{
+    h1 {
       display: flex;
       flex-wrap: wrap;
       font-size: 2.6rem;
       margin-bottom: 20px;
-      @include max-breakpoint(575){
+      @include max-breakpoint(575) {
         font-size: 2rem;
       }
-      @include max-breakpoint(992){
+      @include max-breakpoint(992) {
         justify-content: center;
       }
-      .word1,.word2,.word3,.word4{
+      .word1,
+      .word2,
+      .word3,
+      .word4 {
         padding-right: 10px;
       }
-      
     }
-    p{
+    p {
       font-size: 16px;
       padding-bottom: 10px;
       font-weight: 550;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
     }
   }
-  .banner-button{
+  .banner-button {
+    z-index: 1;
     position: relative;
-    input{
-      z-index: 1;
+    input {
       border-width: 2px 0 2px 2px;
       border-radius: 25px;
       margin-top: 15px;
@@ -63,11 +65,11 @@
       border: 2px solid #fff;
       background: transparent;
       font-weight: 600;
-      &::placeholder{
+      &::placeholder {
         color: #fff;
       }
     }
-    button{
+    button {
       z-index: 1;
       position: absolute;
       right: 0;
@@ -78,10 +80,34 @@
       letter-spacing: 1px;
     }
   }
-  .banner-image img{
+  .banner-image img {
     max-height: 450px;
-    @include max-breakpoint(991){
+    @include max-breakpoint(991) {
       display: none;
     }
+  }
+}
+@include keyframes(fadeInUp) {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@include keyframes(fadeInDown) {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
