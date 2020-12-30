@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Bootstrap Css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Style Css-->
-    <link rel="stylesheet" href="css/main.css">
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Awesome Font-->
@@ -18,16 +16,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Link FancyBox-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="css/main.css">
     <title>zAgency</title>
   </head>
   <body>
     <div class="wrapper">
+      <!--Start Onload-->
+      <div class="onload">
+        <div class="boxloading blue"></div>
+      </div>
+      <!--End Onload-->
       <!--Start Header-->
       <div id="header">
         <div class="container">
           <div class="header__menu">
             <div class="header__menu-logo"><a href="#"><img src="../images/logo.png" alt=""></a></div>
-            <div class="header__menu-bar"><i class="fas fa-bars"></i></div>
+            <div class="header__menu-bar"><i class="btnToggle fas fa-bars"></i></div>
             <ul class="header__menu-list">
               <li class="list-item"><a href="#home">Home</a></li>
               <li class="list-item"><a href="#service">Services</a></li>
@@ -37,7 +42,7 @@
               <li class="list-item"><a href="#pricing">Pricing</a></li>
               <li class="list-item"><a href="#blog">News</a></li>
               <li class="list-item"><a href="#contact-us">Contact Us</a></li>
-              <li class="list-item pages"><a href="#">pages<i class="fas fa-sort-down"></i></a>
+              <li class="list-item pages"><a>pages<i class="fas fa-sort-down"></i></a>
                 <ul class="dropdown">
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Blog</a></li>
@@ -54,11 +59,13 @@
         <p> <span class="text-uppercase">zagency &copy; 2016 </span><span>All Rights Reserved.</span></p>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.boomcdn.com/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

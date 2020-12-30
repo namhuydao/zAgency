@@ -25,7 +25,6 @@ p {
 .btn-style {
   padding: .7rem 1.5rem;
   color: #fff;
-  position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -146,7 +145,7 @@ button:hover {
       font-size: 16px;
       padding-bottom: 10px;
       font-weight: 550;
-      letter-spacing: 0.5px; }
+      letter-spacing: -0.2px; }
   #banner .banner-button {
     z-index: 1;
     position: relative; }
@@ -288,6 +287,7 @@ button:hover {
     margin: auto;
     font-size: 16px;
     font-weight: 550;
+    letter-spacing: -0.2px;
     max-width: 700px; }
   #service .service__item {
     display: flex;
@@ -317,7 +317,8 @@ button:hover {
       text-align: center;
       z-index: 1;
       font-size: 16px;
-      font-weight: 550; }
+      font-weight: 550;
+      letter-spacing: -0.2px; }
     #service .service__item::before {
       content: "";
       position: absolute;
@@ -361,13 +362,139 @@ button:hover {
   background-image: linear-gradient(top, #39459b, #0f97d5);
   background: linear-gradient(to right bottom); }
   #about-us .about__images {
-    margin-right: 80px; }
+    position: relative; }
+    @media only screen and (min-width: 992px) {
+      #about-us .about__images {
+        margin-right: 80px; } }
+    @media only screen and (max-width: 991px) {
+      #about-us .about__images {
+        margin-bottom: 50px; } }
+    #about-us .about__images img {
+      border-radius: 5px;
+      border: 1px solid #ccc; }
+    #about-us .about__images .about-play {
+      content: "";
+      position: absolute;
+      top: calc(50% - 50px); }
+      @media only screen and (min-width: 1200px) {
+        #about-us .about__images .about-play {
+          left: 89% !important; } }
+      @media only screen and (min-width: 992px) {
+        #about-us .about__images .about-play {
+          left: 87%; } }
+      @media only screen and (max-width: 991px) {
+        #about-us .about__images .about-play {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); } }
+      #about-us .about__images .about-play .play-btn {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%; }
+        #about-us .about__images .about-play .play-btn i {
+          font-size: 18px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        #about-us .about__images .about-play .play-btn::after {
+          position: absolute;
+          content: "";
+          background: rgba(255, 255, 255, 0.5);
+          top: -10%;
+          left: -10%;
+          width: 120%;
+          height: 120%;
+          border-radius: 50%; }
+      #about-us .about__images .about-play:hover {
+        cursor: pointer; }
   #about-us .about__info-title {
     margin-bottom: 20px; }
   #about-us .about__info-desc {
     margin-bottom: 20px;
     font-weight: 550;
-    font-size: 16px; }
+    font-size: 16px;
+    letter-spacing: -0.2px; }
+  #about-us .about__info-list {
+    margin-bottom: 30px; }
+    #about-us .about__info-list li {
+      margin-bottom: 10px;
+      font-weight: 550;
+      font-size: 16px;
+      letter-spacing: -0.2px; }
+      #about-us .about__info-list li svg {
+        width: .7em;
+        margin-right: 10px; }
+
+#portfolio {
+  padding: 80px 0; }
+  #portfolio .portfolio__title {
+    text-align: center;
+    margin-bottom: 30px; }
+  #portfolio .portfolio__desc {
+    font-size: 16px;
+    max-width: 700px;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing: -0.2px;
+    margin: auto; }
+  #portfolio .list-box {
+    margin: 30px 0;
+    text-align: center; }
+    #portfolio .list-box .portfolio__list {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #f9f9f9;
+      border-radius: 25px;
+      border: 2px solid #eee; }
+      #portfolio .list-box .portfolio__list-item {
+        display: inline;
+        font-size: 20px;
+        font-weight: 550;
+        padding-right: 10px; }
+        #portfolio .list-box .portfolio__list-item:hover {
+          color: #39459b;
+          cursor: pointer; }
+      #portfolio .list-box .portfolio__list .item-link:not([disabled]):not(.disabled).active {
+        color: #39459b; }
+  #portfolio .portfolio__item {
+    margin-bottom: 20px; }
+    #portfolio .portfolio__item .item-images {
+      overflow: hidden; }
+      #portfolio .portfolio__item .item-images img {
+        border-radius: 8px 8px 0 0; }
+    #portfolio .portfolio__item .item-title {
+      background: #f9f9f9;
+      border-radius: 0 0 8px 8px;
+      border: 2px solid #eee;
+      padding: 1rem;
+      font-weight: 550;
+      text-align: center; }
+    #portfolio .portfolio__item:hover {
+      cursor: pointer; }
+    #portfolio .portfolio__item:hover img {
+      transform: scale(1.1);
+      filter: blur(2px); }
+  #portfolio .portfolio-btn {
+    margin-top: 30px;
+    text-align: center; }
+    #portfolio .portfolio-btn button {
+      background-color: #0f97d5;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#0f97d5), to(#39459b));
+      background-image: -webkit-linear-gradient(top, #0f97d5, #39459b);
+      background-image: -moz-linear-gradient(top, #0f97d5, #39459b);
+      background-image: -ms-linear-gradient(top, #0f97d5, #39459b);
+      background-image: -o-linear-gradient(top, #0f97d5, #39459b);
+      background-image: linear-gradient(top, #0f97d5, #39459b); }
+
+.isotope .isotope-item {
+  -webkit-transition-property: top, left, opacity;
+  -moz-transition-property: top, left, opacity;
+  -ms-transition-property: top, left, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: top, left, opacity; }
 
 .onload {
   position: fixed;
@@ -499,7 +626,6 @@ button:hover {
 #header {
   position: fixed;
   top: 0;
-  height: 80px;
   width: 100%;
   z-index: 1000; }
   #header .header__menu {
@@ -508,7 +634,6 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px #ccc;
     padding: .8rem 2rem;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -617,7 +742,6 @@ button:hover {
   width: 100%;
   left: 0;
   background-color: white;
-  height: 66px;
   right: 0;
   box-shadow: 0 0 10px #ccc; }
   #header.sticky .header__menu {

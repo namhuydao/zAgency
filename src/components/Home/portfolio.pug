@@ -1,0 +1,50 @@
+//Start Portfolio
+#portfolio
+  .container
+    h1.portfolio__title.text-uppercase.color464646 our projects
+    p.portfolio__desc.color464646 Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.
+    .list-box
+      ul.portfolio__list.iso-nav
+        li.portfolio__list-item.color464646
+          a.item-link.active(data-filter="*") All
+        li.portfolio__list-item.color464646
+          a.item-link(data-filter=".webProject") Websites
+        li.portfolio__list-item.color464646
+          a.item-link(data-filter=".designProject") Designs
+        li.portfolio__list-item.color464646
+          a.item-link(data-filter=".socialProject") Social Media
+    .row.grid
+      .grid-sizer.col-12.col-md-6.col-lg-4
+      .col-12.col-md-6.col-lg-4.webProject.grid-item
+        .portfolio__item
+          .item-images
+            img(src="../../images/portfolio1.jpg", alt="")
+          .item-title.text-uppercase.color464646 web project
+      .col-12.col-md-6.col-lg-4.designProject.grid-item
+        .portfolio__item
+          .item-images
+            img(src="../../images/portfolio2.jpg", alt="")
+          .item-title.text-uppercase.color464646 designing project
+      .col-12.col-md-6.col-lg-4.grid-item.socialProject
+        .portfolio__item
+          .item-images
+            img(src="../../images/portfolio3.jpg", alt="")
+          .item-title.text-uppercase.color464646 social project
+      .col-12.col-md-6.col-lg-4.grid-item.webProject
+        .portfolio__item
+          .item-images
+            img(src="../../images/portfolio4.jpg", alt="")
+          .item-title.text-uppercase.color464646 web project
+      .col-12.col-md-6.col-lg-4.grid-item.designProject
+        .portfolio__item
+          .item-images
+            img(src="../../images/portfolio5.jpg", alt="")
+          .item-title.text-uppercase.color464646 designing project
+      .col-12.col-md-6.col-lg-4.grid-item.socialProject
+        .portfolio__item
+          .item-images
+            img(src="../../images/portfolio6.jpg", alt="")
+          .item-title.text-uppercase.color464646 social project
+    .portfolio-btn
+      button.btn-style.text-uppercase See more projects
+//End Portfolio

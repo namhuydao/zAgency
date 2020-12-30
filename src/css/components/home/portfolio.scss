@@ -1,0 +1,77 @@
+#portfolio{
+  padding: 80px 0;
+  .portfolio__title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__desc{
+    font-size: 16px;
+    max-width: 700px;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing: -0.2px;
+    margin: auto;
+  }
+  .list-box{
+    margin: 30px 0;
+    text-align: center;
+    .portfolio__list{
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #f9f9f9;
+      border-radius: 25px;
+      border: 2px solid #eee;
+      &-item{
+        display: inline;
+        font-size: 20px;
+        font-weight: 550;
+        padding-right: 10px;
+        &:hover{
+          color: #39459b;
+          cursor: pointer;
+        }
+      }
+      .item-link:not([disabled]):not(.disabled).active{
+        color: #39459b;
+      }
+    }
+  }
+  .portfolio__item{
+    margin-bottom: 20px;
+    .item-images{
+      overflow: hidden;
+      img{
+        border-radius: 8px 8px 0 0;
+      }
+    }
+    .item-title{
+      background: #f9f9f9;
+      border-radius: 0 0 8px 8px;
+      border: 2px solid #eee;
+      padding: 1rem;
+      font-weight: 550;
+      text-align: center;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    &:hover img{
+      transform: scale(1.1);
+      filter: blur(2px);
+    }
+  }
+  .portfolio-btn{
+    margin-top: 30px;
+    text-align: center;
+    button{
+      @include background-gradient(#0f97d5, #39459b);
+    }
+  }
+}
+.isotope .isotope-item {
+  -webkit-transition-property: top, left, opacity;
+     -moz-transition-property: top, left, opacity;
+      -ms-transition-property: top, left, opacity;
+       -o-transition-property: top, left, opacity;
+          transition-property: top, left, opacity;
+}
