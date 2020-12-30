@@ -1,0 +1,18 @@
+#about-us{
+  padding: 80px 0;
+  @include background-gradient(#39459b, #0f97d5);
+  background: linear-gradient(to right bottom);
+  .about__images{
+    margin-right: 80px;
+  }
+  .about__info{
+    &-title{
+      margin-bottom: 20px;
+    }
+    &-desc{
+      margin-bottom: 20px;
+      font-weight: 550;
+      font-size: 16px;
+    }
+  }
+}

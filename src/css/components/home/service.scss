@@ -7,13 +7,13 @@
   .service__desc{
     text-align: center;
     margin: auto;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 550;
     max-width: 700px;
   }
   .service__item{
     @include flex-center-column;
-    margin: 30px 0 0 0;
+    margin-top: 4rem;
     padding: 3rem 1.5rem;
     background: #f9f9f9;
     border: 2px solid #eee;
@@ -30,7 +30,7 @@
     }
     .bar{
       height: 2px;
-      width: 30px;
+      width: 50px;
       background-color: #464646;
       margin-bottom: 30px;
       z-index: 1;
@@ -38,21 +38,21 @@
     &-desc{
       text-align: center;
       z-index: 1;
+      font-size: 16px;
+      font-weight: 550;
     }
     &::before{
       content: "";
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
-      height: 100%;
+      height: 0;
       width: 100%;
       opacity: 0;
       @include background-gradient(#39459b,#0f97d5);
       background: linear-gradient(to right bottom);
-      transition: all .5s ease;
-      transform-origin: bottom;
+      transition: all .3s ease;
       border-radius: 8px;
-      transform: scale(1);
     }
     &:hover{
       cursor: pointer;
@@ -70,7 +70,7 @@
       background-color: white;
     }
     &:hover::before{
-      transform: scale(1,1);
+      height: 100%;
       opacity: 1;
     }
   }
