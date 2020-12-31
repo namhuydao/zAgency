@@ -16,3 +16,12 @@
 .text-uppercase{
   text-transform: uppercase;
 }
+.owl-carousel .owl-dots .owl-dot span{
+  @include background-gradient(#0f97d5, #39459b);
+  transition: all .3s ease;
+}
+.owl-carousel .owl-dots .owl-dot.active span{
+  @include background-gradient(#0f97d5, #39459b);
+  width: 30px;
+  border-radius: 25px;
+}

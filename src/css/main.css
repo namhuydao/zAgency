@@ -34,6 +34,27 @@ p {
 .text-uppercase {
   text-transform: uppercase; }
 
+.owl-carousel .owl-dots .owl-dot span {
+  background-color: #0f97d5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0f97d5), to(#39459b));
+  background-image: -webkit-linear-gradient(top, #0f97d5, #39459b);
+  background-image: -moz-linear-gradient(top, #0f97d5, #39459b);
+  background-image: -ms-linear-gradient(top, #0f97d5, #39459b);
+  background-image: -o-linear-gradient(top, #0f97d5, #39459b);
+  background-image: linear-gradient(top, #0f97d5, #39459b);
+  transition: all .3s ease; }
+
+.owl-carousel .owl-dots .owl-dot.active span {
+  background-color: #0f97d5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0f97d5), to(#39459b));
+  background-image: -webkit-linear-gradient(top, #0f97d5, #39459b);
+  background-image: -moz-linear-gradient(top, #0f97d5, #39459b);
+  background-image: -ms-linear-gradient(top, #0f97d5, #39459b);
+  background-image: -o-linear-gradient(top, #0f97d5, #39459b);
+  background-image: linear-gradient(top, #0f97d5, #39459b);
+  width: 30px;
+  border-radius: 25px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -495,6 +516,174 @@ button:hover {
   -ms-transition-property: top, left, opacity;
   -o-transition-property: top, left, opacity;
   transition-property: top, left, opacity; }
+
+#testimonial {
+  padding: 80px 0;
+  background: #f9f9f9; }
+  #testimonial .counter__item {
+    border: 2px solid #eee;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    #testimonial .counter__item .counter-icon {
+      width: 30%;
+      margin-bottom: 10px; }
+    #testimonial .counter__item .counter-number {
+      margin-bottom: 20px;
+      font-weight: 550;
+      font-size: 20px; }
+    #testimonial .counter__item .counter-title {
+      font-size: 18px; }
+  #testimonial .event-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 767px) {
+      #testimonial .event-item {
+        display: block; } }
+  @media only screen and (max-width: 767px) {
+    #testimonial .testimonial__item {
+      padding-top: 30px; } }
+  @media only screen and (max-width: 767px) {
+    #testimonial .testimonial__item .testimonial__title {
+      text-align: center; } }
+  #testimonial .testimonial__item .testimonial__desc {
+    font-weight: 550;
+    letter-spacing: -.2px;
+    font-size: 16px; }
+    @media only screen and (max-width: 767px) {
+      #testimonial .testimonial__item .testimonial__desc {
+        text-align: center; } }
+  #testimonial .opinion__item {
+    padding: 1rem; }
+    #testimonial .opinion__item .opinion {
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      border: 2px solid #eee;
+      position: relative;
+      margin-bottom: 1.5rem;
+      font-size: 13px;
+      font-weight: 550;
+      letter-spacing: -.2px; }
+      #testimonial .opinion__item .opinion::after {
+        content: "";
+        position: absolute;
+        top: calc(100% - 14.5px);
+        left: 21px;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-width: 0px 2px 2px 0px;
+        border-color: #eee;
+        border-style: solid;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    #testimonial .opinion__item .client__info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: flex-start; }
+      #testimonial .opinion__item .client__info .client-images {
+        width: 80px;
+        border-radius: 50%;
+        margin-right: 1rem; }
+
+#team {
+  padding: 80px 0; }
+  #team .team__title {
+    text-align: center;
+    margin-bottom: 20px; }
+  #team .team__desc {
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+    font-weight: 550;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    margin-bottom: 30px; }
+  #team .team__item {
+    border-radius: 8px;
+    overflow: hidden; }
+    #team .team__item:hover {
+      cursor: pointer; }
+      #team .team__item:hover .item-images::before {
+        opacity: 1; }
+      #team .team__item:hover .item-images::after {
+        opacity: 1; }
+    #team .team__item:hover .item-images img {
+      transform: scale(1.1);
+      filter: blur(2px); }
+    #team .team__item:hover .item-images ul {
+      opacity: 1; }
+    #team .team__item .item-images {
+      position: relative;
+      overflow: hidden; }
+      #team .team__item .item-images::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+        border-radius: 8px;
+        z-index: 1; }
+      #team .team__item .item-images::after {
+        content: "";
+        width: 90%;
+        height: 90%;
+        border: 2px solid #fff;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+        border-radius: 8px;
+        z-index: 2; }
+      #team .team__item .item-images ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px; }
+        #team .team__item .item-images ul li {
+          margin: 0 0.5rem; }
+    #team .team__item .team__content {
+      border-top: 3px solid #0f97d5;
+      padding: 15px 0;
+      background: #f9f9f9;
+      overflow: hidden;
+      position: relative; }
+    #team .team__item .item-name {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 550; }
+    #team .team__item .item-desc {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 550;
+      letter-spacing: -.2px; }
 
 .onload {
   position: fixed;
