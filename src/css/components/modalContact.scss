@@ -1,0 +1,23 @@
+.modal{
+  border-radius: 8px;
+}
+.modal-content{
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  input{
+    margin-bottom: 1rem;
+    min-height: 42px;
+    padding: 0 1rem;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    background: transparent;
+    width: 100%;
+  }
+  button{
+    width: 100%;
+    &:hover{
+      transform: translateY(-10px);
+    }
+  }
+
+}

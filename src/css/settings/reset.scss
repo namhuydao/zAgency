@@ -60,3 +60,9 @@ button:hover{
   cursor: pointer;
   box-shadow: 0 15px 15px -11px rgba(0, 0, 0, 0.4);
 }
+
+.btn.btn-primary,.btn:focus,.btn-primary:focus,.btn-primary:active .btn:active{
+  box-shadow: none;
+  border: none;
+  outline: none;
+}

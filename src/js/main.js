@@ -19,8 +19,7 @@ pages.addEventListener('click', () =>{
   dropdown.classList.toggle('show')
 })
 
-// Active isotope with jQuery code:
-
+//Portfolio Isotope
 var $grid = $('.grid').imagesLoaded(function() {
 	// init Isotope after all images have loaded
 	$grid.isotope({
@@ -47,6 +46,7 @@ $('.iso-nav a').click(function() {
 	return false;
 });
 
+//Testimonial Carousel
 $(".testimonial__carousel").owlCarousel({
 	nav: false,
 	margin: 10,
@@ -56,6 +56,7 @@ $(".testimonial__carousel").owlCarousel({
 	items: 1,
 })
 
+//Testimonial CounterUp
 $(function () {
   // when user react the counter area the event start
   $("#testimonial").waypoint(function (direction) {
@@ -99,6 +100,7 @@ $(function () {
   });
 });
 
+//Team Carousel
 $(".team__carousel").owlCarousel({
 	nav: false,
 	margin: 20,
@@ -121,3 +123,5 @@ $(".team__carousel").owlCarousel({
     }
   }
 })
+
+//ScrollSpy

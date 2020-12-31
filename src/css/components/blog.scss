@@ -1,0 +1,106 @@
+#blog{
+  padding: 80px 0;
+  .blog__title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .blog__desc{
+    margin: auto;
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: -.2px;
+    margin-bottom: 50px;
+  }
+  .blog__items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    @include max-breakpoint(991){
+      grid-template-columns: 1fr;
+    }
+    .imageItem{
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+      &:hover{
+        &::before{
+          opacity: 1;
+        }
+        img{
+          transform: scale(1.1);
+        }
+        .img-title{
+          bottom: 70px;
+        }
+        .img-desc{
+          bottom: 30px;
+          opacity: 1;
+        }
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.7);
+        border-radius: 8px;
+      }
+      &::before{
+        content: "";
+        width: calc( 100% - 2rem );
+        height: calc( 100% - 2rem );
+        border: 2px solid #fff;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+        border-radius: 8px;
+        z-index: 3;
+      }
+      img{
+        border-radius: 8px;
+        @include single-transition(all, .3s, ease, 0);
+      }
+      .img-title{
+        position: absolute;
+        content: "";
+        bottom: 40px;
+        left: 40px;
+        font-size: 22px;
+        z-index: 2;
+        transition: all .3s ease;
+      }
+      .img-desc{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        opacity: 0;
+        left: 40px;
+        font-size: 13px;
+        z-index: 2;
+        transition: all 1s ease;
+      }
+    }
+    .item-first{
+      grid-area: 1 / 1 / span 2 / span 2;
+      img{
+        height: 100%;
+      }
+      @include max-breakpoint(991){
+        grid-area: unset;
+      }
+    }
+  }
+  .blog-btn{
+    margin-top: 50px;
+    text-align: center;
+    button:hover{
+      transform: translateY(-10px);
+    }
+  }
+}
