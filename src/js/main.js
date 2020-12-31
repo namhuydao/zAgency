@@ -123,5 +123,3 @@ $(".team__carousel").owlCarousel({
     }
   }
 })
-
-//ScrollSpy
