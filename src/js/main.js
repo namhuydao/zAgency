@@ -101,9 +101,23 @@ $(function () {
 
 $(".team__carousel").owlCarousel({
 	nav: false,
-	margin: 10,
+	margin: 20,
 	loop: true,
-  dotsEach: 1,
+  dotsEach: 2,
 	autoplay: true,
-	items: 4,
+  responsiveClass: true,
+  responsive:{
+    0:{
+      items: 1,
+    },
+    576:{
+      items: 2,
+    },
+    768:{
+      items: 3,
+    },
+    1200:{
+      items: 4,
+    }
+  }
 })

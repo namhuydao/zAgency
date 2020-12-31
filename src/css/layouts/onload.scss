@@ -51,18 +51,18 @@
     transform: translateY(15px);
     border-bottom-right-radius: 25px;
   }
-
   100% {
     transform: translateY(0);
     transform: rotate(45deg);
   }
 }
-@include keyframes(shadow){
-  0%,100%{
+@include keyframes(shadow) {
+  0%,
+  100% {
     transform: scaleX(1);
-}
+  }
 
-50%{
+  50% {
     transform: scaleX(1.3);
-}
+  }
 }

@@ -2,7 +2,7 @@
   background-color: #13c8c2;
 }
 .btn-blue{
-  background-color: #39459b;
+  @include background-gradient(#0f97d5,#39459b);
 }
 .btn-style{
   padding: .7rem 1.5rem;
@@ -19,6 +19,12 @@
 .owl-carousel .owl-dots .owl-dot span{
   @include background-gradient(#0f97d5, #39459b);
   transition: all .3s ease;
+}
+.owl-carousel .owl-dots .owl-dot span:hover{
+  @include background-gradient(#0f97d5, #39459b);
+}
+.owl-carousel .owl-dots .owl-dot:hover span{
+  @include background-gradient(#0f97d5, #39459b);
 }
 .owl-carousel .owl-dots .owl-dot.active span{
   @include background-gradient(#0f97d5, #39459b);
