@@ -43,7 +43,6 @@
       }
     }
     &:hover{
-      transform: translate(0, -1rem);
       box-shadow: 0 19px 19px -10px rgba(0, 0, 0, 0.3);
     }
   }
@@ -54,6 +53,9 @@
       box-shadow: none;
       transform: none;
     }
+  }
+  .animate__table:hover{
+    transform: translate(0, -1rem);
   }
   button:hover{
     transform: translate(0, -.5rem);

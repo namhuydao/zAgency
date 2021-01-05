@@ -99,6 +99,9 @@ ul, li {
 p {
   margin-bottom: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -863,7 +866,6 @@ button:hover {
       #pricing .pricing__table .pricing-content li {
         margin-bottom: 20px; }
     #pricing .pricing__table:hover {
-      transform: translate(0, -1rem);
       box-shadow: 0 19px 19px -10px rgba(0, 0, 0, 0.3); }
   #pricing .adv-table {
     transform: translate(0, -1rem);
@@ -872,6 +874,8 @@ button:hover {
       #pricing .adv-table {
         box-shadow: none;
         transform: none; } }
+  #pricing .animate__table:hover {
+    transform: translate(0, -1rem); }
   #pricing button:hover {
     transform: translate(0, -0.5rem); }
 
@@ -1373,6 +1377,9 @@ button:hover {
     padding: .5rem 2rem;
     width: 100%;
     background-color: white; }
+
+.showColor {
+  color: red; }
 
 #footer {
   background-color: #39459b;

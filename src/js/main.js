@@ -123,3 +123,48 @@ $(".team__carousel").owlCarousel({
     }
   }
 })
+/* 
+let scrollSmooth = {
+  init: function() {
+      scrollSmooth.scrollSection()
+  },
+  scrollSection: function() {
+      var navLink = document.querySelectorAll(".list-item__link");
+      var section = document.querySelectorAll(".section");
+      console.log(navLink)
+      console.log(section)
+      navLink.forEach((links, index) => {
+          links.addEventListener("click", (e) => {
+              e.preventDefault()
+              let sectionPosition = section[index].offsetTop
+              window.scrollTo(0, sectionPosition - 80)
+          })
+      })
+  }
+}
+scrollSmooth.init()
+
+// vanilla menu
+function functionScroll() {
+  var section = document.querySelectorAll('.action');
+  sections = {};
+  let i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+      sections[e.id] = e.offsetTop;
+  });
+
+
+
+  console.log(section)
+  for (i in sections) {
+      if (sections[i] <= window.pageYOffset + 80) {
+        document.querySelector('.showColor').classList.remove('showColor');
+        console.log(document.querySelector('a[href*= ' + i + ']'));
+        document.querySelector('a[href*= ' + i + ']').classList.add('showColor');
+      }
+  }
+}
+
+window.addEventListener('scroll', functionScroll());
+window.addEventListener('resize', functionScroll); */

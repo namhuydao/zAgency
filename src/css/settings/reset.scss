@@ -18,6 +18,9 @@ ul,li{
 p {
   margin-bottom: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 a{
   text-decoration: none;
   &:hover {
