@@ -1318,7 +1318,9 @@ button:hover {
             #header .header__menu-list .list-item:hover .dropdown {
               opacity: 1;
               visibility: visible;
-              transform: translateY(0); } }
+              transform: translateY(0); }
+            #header .header__menu-list .list-item-link.showColor {
+              color: red; } }
         @media only screen and (max-width: 991px) {
           #header .header__menu-list .list-item {
             padding: 10px 5px; } }
@@ -1377,9 +1379,6 @@ button:hover {
     padding: .5rem 2rem;
     width: 100%;
     background-color: white; }
-
-.showColor {
-  color: red; }
 
 #footer {
   background-color: #39459b;

@@ -71,6 +71,9 @@
             visibility: visible;
             transform: translateY(0);
           }
+          &-link.showColor{
+            color: red;
+          }
         }
         @include max-breakpoint(991){
           padding: 10px 5px;
@@ -144,7 +147,4 @@
     width: 100%;
     background-color: white;
   }
-}
-.showColor{
-  color: red;
 }

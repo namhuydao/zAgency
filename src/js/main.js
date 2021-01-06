@@ -123,7 +123,8 @@ $(".team__carousel").owlCarousel({
     }
   }
 })
-/* 
+
+//Nav Scroll Spy
 let scrollSmooth = {
   init: function() {
       scrollSmooth.scrollSection()
@@ -131,40 +132,34 @@ let scrollSmooth = {
   scrollSection: function() {
       var navLink = document.querySelectorAll(".list-item__link");
       var section = document.querySelectorAll(".section");
-      console.log(navLink)
-      console.log(section)
       navLink.forEach((links, index) => {
           links.addEventListener("click", (e) => {
               e.preventDefault()
               let sectionPosition = section[index].offsetTop
-              window.scrollTo(0, sectionPosition - 80)
+              window.scrollTo(0, sectionPosition - 60)
           })
       })
   }
 }
 scrollSmooth.init()
 
-// vanilla menu
+/* // vanilla menu
 function functionScroll() {
   var section = document.querySelectorAll('.action');
   sections = {};
-  let i = 0;
 
   Array.prototype.forEach.call(section, function(e) {
       sections[e.id] = e.offsetTop;
   });
-
-
-
-  console.log(section)
-  for (i in sections) {
-      if (sections[i] <= window.pageYOffset + 80) {
+  for (let i in sections) {
+      if (sections[i] <= window.pageYOffset + 60) {
+        console.log(sections[i]);
         document.querySelector('.showColor').classList.remove('showColor');
-        console.log(document.querySelector('a[href*= ' + i + ']'));
-        document.querySelector('a[href*= ' + i + ']').classList.add('showColor');
+        document.querySelector('a[href= ' + i + ']').classList.add('showColor');
       }
   }
 }
 
 window.addEventListener('scroll', functionScroll());
 window.addEventListener('resize', functionScroll); */
+
