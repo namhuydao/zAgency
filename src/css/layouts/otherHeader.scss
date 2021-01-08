@@ -1,4 +1,4 @@
-#header{
+.header{
   position: fixed;
   top: 0;
   width: 100%;
@@ -132,7 +132,7 @@
     }
   }
 }
-#header.sticky{
+.header.sticky{
   position: fixed;
   top: 0;
   width: 100%;

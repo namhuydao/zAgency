@@ -1,0 +1,40 @@
+.about-desc{
+  position: relative;
+  background-image: url("../../images/about_desc.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0 0 0;
+  .desc-images {
+    padding-right: 40px;
+    img{
+      width: 100%;
+      margin-bottom: -6rem;
+      z-index: 3;
+    }
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.8);
+  }
+  .desc-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    .desc-title{
+      font-size: 1.9rem;
+      margin-bottom: 30px;
+    }
+    .desc-desc{
+      font-size: 14px;
+    }
+  }
+}

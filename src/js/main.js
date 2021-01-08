@@ -7,6 +7,10 @@ let header = document.querySelector("#header");
 window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 0)
 })
+let otherHeader = document.querySelector(".header");
+window.addEventListener('scroll', () => {
+    otherHeader.classList.toggle('sticky', window.scrollY > 0)
+})
 let bar = document.querySelector(".header__menu-bar");
 let menulist = document.querySelector(".header__menu-list");
 bar.addEventListener('click', () =>{
@@ -143,23 +147,38 @@ let scrollSmooth = {
 }
 scrollSmooth.init()
 
-/* // vanilla menu
 function functionScroll() {
-  var section = document.querySelectorAll('.action');
-  sections = {};
+  var section = document.querySelectorAll('.section');
+    sections = {},
 
   Array.prototype.forEach.call(section, function(e) {
-      sections[e.id] = e.offsetTop;
+    sections[e.id] = e.offsetTop;
   });
-  for (let i in sections) {
-      if (sections[i] <= window.pageYOffset + 60) {
-        console.log(sections[i]);
-        document.querySelector('.showColor').classList.remove('showColor');
-        document.querySelector('a[href= ' + i + ']').classList.add('showColor');
+  for (i in sections) {
+    if (sections[i] <= window.pageYOffset + 60) {
+      const active = document.querySelector('.showColor');
+      if (active) {
+        active.classList.remove('showColor');
       }
+      if (document.querySelector('a[href*=' + i + ']')) {
+        document.querySelector('a[href*=' + i + ']').classList.add('showColor');
+      }
+    }
   }
 }
 
-window.addEventListener('scroll', functionScroll());
-window.addEventListener('resize', functionScroll); */
+window.addEventListener('scroll', functionScroll);
+window.addEventListener('resize', functionScroll);
 
+$('.fillter_btn').on('click',function(){
+  var tag = $(this).attr('id');
+  $('.fillter_btn').removeClass('active');
+  $(this).addClass('active');
+  $('.about-tab').each(function(){
+    var data = $(this).attr('data-target');
+    if( data == tag){
+      $('.about-tab').removeClass('open');
+      $(this).addClass('open');
+    }
+  });
+});
