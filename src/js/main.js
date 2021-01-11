@@ -170,9 +170,9 @@ function functionScroll() {
 window.addEventListener('scroll', functionScroll);
 window.addEventListener('resize', functionScroll);
 
-$('.fillter_btn').on('click',function(){
+$('.filter_btn').on('click',function(){
   var tag = $(this).attr('id');
-  $('.fillter_btn').removeClass('active');
+  $('.filter_btn').removeClass('active');
   $(this).addClass('active');
   $('.about-tab').each(function(){
     var data = $(this).attr('data-target');
