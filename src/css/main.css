@@ -1304,7 +1304,7 @@ button:hover {
 
 .about-desc {
   position: relative;
-  background-image: url("../../images/about_desc.jpg");
+  background-image: url("../images/about_desc.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
