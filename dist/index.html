@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Bootstrap Css-->
-    <link rel="stylesheet" href="css/vendo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Awesome Font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- Link Owl Carousel-->
-    <link rel="stylesheet" href="css/vendo/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendo/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!--Link WoW Animate-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Link FancyBox-->
@@ -28,35 +28,35 @@
       </div>
       <!--End Onload-->
       <!--Start Header-->
-      <div id="header">
-        <div class="container">
-          <div class="header__menu">
-            <div class="header__menu-logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
-            <div class="header__menu-bar"><i class="btnToggle fas fa-bars"></i></div>
-            <ul class="header__menu-list">
-              <li class="list-item"><a href="#home">Home</a></li>
-              <li class="list-item"><a href="#service">Services</a></li>
-              <li class="list-item"><a href="#portfolio">Portfolio</a></li>
-              <li class="list-item"><a href="#testimonial">Testimonial</a></li>
-              <li class="list-item"><a href="#team">Team</a></li>
-              <li class="list-item"><a href="#pricing">Pricing</a></li>
-              <li class="list-item"><a href="#blog">News</a></li>
-              <li class="list-item"><a href="#contact-us">Contact Us</a></li>
-              <li class="list-item pages"><a>pages<i class="fas fa-sort-down"></i></a>
-                <ul class="dropdown">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Single Blog</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+            <div id="header">
+              <div class="container">
+                <div class="header__menu">
+                  <div class="header__menu-logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+                  <div class="header__menu-bar"><i class="btnToggle fas fa-bars"></i></div>
+                  <ul class="header__menu-list">
+                    <li class="list-item"><a class="list-item__link showColor" href="#banner">Home</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#service">Services</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#portfolio">Portfolio</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#testimonial">Testimonial</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#team">Team</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#pricing">Pricing</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#blog">News</a></li>
+                    <li class="list-item"><a class="list-item__link" href="#contact-us">Contact Us</a></li>
+                    <li class="list-item pages"><a>pages<i class="fas fa-sort-down"></i></a>
+                      <ul class="dropdown">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Single Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
       <!--End Header-->
       <!--Start Banner-->
-      <div id="banner">
+      <div class="section" id="banner">
         <div class="container">
           <div class="banner__container">
             <div class="row">
@@ -79,7 +79,7 @@
       </div>
       <!--End Banner-->
       <!--Start Service-->
-      <div id="service">
+      <div class="section" id="service">
         <div class="container">
           <h1 class="service__title text-uppercase color464646">our service</h1>
           <p class="service__desc color464646">
@@ -161,65 +161,65 @@
       </div>
       <!--End About Us-->
       <!--Start Portfolio-->
-      <div id="portfolio">
-        <div class="container">
-          <h1 class="portfolio__title text-uppercase color464646">our projects</h1>
-          <p class="portfolio__desc color464646">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
-          <div class="list-box">
-            <ul class="portfolio__list iso-nav">
-              <li class="portfolio__list-item color464646"><a class="item-link active" data-filter="*">All</a></li>
-              <li class="portfolio__list-item color464646"><a class="item-link" data-filter=".webProject">Websites</a></li>
-              <li class="portfolio__list-item color464646"><a class="item-link" data-filter=".designProject">Designs</a></li>
-              <li class="portfolio__list-item color464646"><a class="item-link" data-filter=".socialProject">Social Media</a></li>
-            </ul>
-          </div>
-          <div class="row grid">
-            <div class="grid-sizer col-12 col-md-6 col-lg-4"></div>
-            <div class="col-12 col-md-6 col-lg-4 webProject grid-item">
-              <div class="portfolio__item">
-                <div class="item-images"><img src="images/portfolio1.jpg" alt=""></div>
-                <div class="item-title text-uppercase color464646">web project</div>
+            <div id="portfolio">
+              <div class="container">
+                <h1 class="portfolio__title text-uppercase color464646">our projects</h1>
+                <p class="portfolio__desc color464646">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                <div class="list-box">
+                  <ul class="portfolio__list iso-nav">
+                    <li class="portfolio__list-item color464646"><a class="item-link active" data-filter="*">All</a></li>
+                    <li class="portfolio__list-item color464646"><a class="item-link" data-filter=".webProject">Websites</a></li>
+                    <li class="portfolio__list-item color464646"><a class="item-link" data-filter=".designProject">Designs</a></li>
+                    <li class="portfolio__list-item color464646"><a class="item-link" data-filter=".socialProject">Social Media</a></li>
+                  </ul>
+                </div>
+                <div class="row grid">
+                  <div class="grid-sizer col-12 col-md-6 col-lg-4"></div>
+                  <div class="col-12 col-md-6 col-lg-4 webProject grid-item">
+                    <div class="portfolio__item">
+                      <div class="item-images"><img src="images/portfolio1.jpg" alt=""></div>
+                      <div class="item-title text-uppercase color464646">web project</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 designProject grid-item">
+                    <div class="portfolio__item">
+                      <div class="item-images"><img src="images/portfolio2.jpg" alt=""></div>
+                      <div class="item-title text-uppercase color464646">designing project</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 grid-item socialProject">
+                    <div class="portfolio__item">
+                      <div class="item-images"><img src="images/portfolio3.jpg" alt=""></div>
+                      <div class="item-title text-uppercase color464646">social project</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 grid-item webProject">
+                    <div class="portfolio__item">
+                      <div class="item-images"><img src="images/portfolio4.jpg" alt=""></div>
+                      <div class="item-title text-uppercase color464646">web project</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 grid-item designProject">
+                    <div class="portfolio__item">
+                      <div class="item-images"><img src="images/portfolio5.jpg" alt=""></div>
+                      <div class="item-title text-uppercase color464646">designing project</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 grid-item socialProject">
+                    <div class="portfolio__item">
+                      <div class="item-images"><img src="images/portfolio6.jpg" alt=""></div>
+                      <div class="item-title text-uppercase color464646">social project</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-btn">
+                  <button class="btn-style text-uppercase"> <a href="portfolio.html">See more projects</a></button>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 designProject grid-item">
-              <div class="portfolio__item">
-                <div class="item-images"><img src="images/portfolio2.jpg" alt=""></div>
-                <div class="item-title text-uppercase color464646">designing project</div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 grid-item socialProject">
-              <div class="portfolio__item">
-                <div class="item-images"><img src="images/portfolio3.jpg" alt=""></div>
-                <div class="item-title text-uppercase color464646">social project</div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 grid-item webProject">
-              <div class="portfolio__item">
-                <div class="item-images"><img src="images/portfolio4.jpg" alt=""></div>
-                <div class="item-title text-uppercase color464646">web project</div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 grid-item designProject">
-              <div class="portfolio__item">
-                <div class="item-images"><img src="images/portfolio5.jpg" alt=""></div>
-                <div class="item-title text-uppercase color464646">designing project</div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 grid-item socialProject">
-              <div class="portfolio__item">
-                <div class="item-images"><img src="images/portfolio6.jpg" alt=""></div>
-                <div class="item-title text-uppercase color464646">social project</div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-btn">
-            <button class="btn-style text-uppercase">See more projects</button>
-          </div>
-        </div>
-      </div>
       <!--End Portfolio-->
       <!--Start Testimonial-->
-      <div id="testimonial">
+      <div class="section" id="testimonial">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
@@ -276,106 +276,108 @@
       </div>
       <!--End Testimonial-->
       <!--Start Team-->
-      <div id="team">
-        <div class="container">
-          <h1 class="team__title text-uppercase color464646">our lovely team</h1>
-          <p class="team__desc color464646">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
-          <div class="team__carousel owl-carousel owl-theme">
-            <div class="team__item">
-              <div class="item-images"><img src="images/client1.jpg" alt="">
-                <ul>
-                  <li> <i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-google-plus-g"></i></li>
-                  <li><i class="fab fa-linkedin-in"></i></li>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                </ul>
-              </div>
-              <div class="team__content">
-                <h3 class="item-name text-uppercase color464646">Naggy Noor</h3>
-                <p class="item-desc color464646">Web Developer</p>
+      <!--Start Team-->
+      <!--End Team-->
+            <div id="team">
+              <div class="container">
+                <h1 class="team__title text-uppercase color464646">Our lovely team</h1>
+                <p class="team__desc color464646">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                <div class="team__carousel owl-carousel owl-theme">
+                  <div class="team__item">
+                    <div class="item-images"><img src="images/client1.jpg" alt="">
+                      <ul>
+                        <li> <i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                      </ul>
+                    </div>
+                    <div class="team__content">
+                      <h3 class="item-name text-uppercase color464646">Naggy Noor</h3>
+                      <p class="item-desc color464646">Web Developer</p>
+                    </div>
+                  </div>
+                  <div class="team__item">
+                    <div class="item-images"><img src="images/client2.jpg" alt="">
+                      <ul>
+                        <li> <i class="fab fa-twitter colorwhite"></i></li>
+                        <li><i class="fab fa-google-plus-g colorwhite"></i></li>
+                        <li><i class="fab fa-linkedin-in colorwhite"></i></li>
+                        <li><i class="fab fa-facebook-f colorwhite"> </i></li>
+                      </ul>
+                    </div>
+                    <div class="team__content">
+                      <h3 class="item-name text-uppercase color464646">Perla Mohammed</h3>
+                      <p class="item-desc color464646">Web Designer</p>
+                    </div>
+                  </div>
+                  <div class="team__item">
+                    <div class="item-images"><img src="images/client3.jpg" alt="">
+                      <ul>
+                        <li> <i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                      </ul>
+                    </div>
+                    <div class="team__content">
+                      <h3 class="item-name text-uppercase color464646">Wiliamson</h3>
+                      <p class="item-desc color464646">Ui/Ux Designer</p>
+                    </div>
+                  </div>
+                  <div class="team__item">
+                    <div class="item-images"><img src="images/client4.jpg" alt="">
+                      <ul>
+                        <li> <i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                      </ul>
+                    </div>
+                    <div class="team__content">
+                      <h3 class="item-name text-uppercase color464646">Tamer Ahmed</h3>
+                      <p class="item-desc color464646">Social media</p>
+                    </div>
+                  </div>
+                  <div class="team__item">
+                    <div class="item-images"><img src="images/client1.jpg" alt="">
+                      <ul>
+                        <li> <i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                      </ul>
+                    </div>
+                    <div class="team__content">
+                      <h3 class="item-name text-uppercase color464646">Naggy Noor</h3>
+                      <p class="item-desc color464646">Web Developer</p>
+                    </div>
+                  </div>
+                  <div class="team__item">
+                    <div class="item-images"><img src="images/client2.jpg" alt="">
+                      <ul>
+                        <li> <i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                      </ul>
+                    </div>
+                    <div class="team__content">
+                      <h3 class="item-name text-uppercase color464646">Perla Mohammed</h3>
+                      <p class="item-desc color464646">Web Designer</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="team__item">
-              <div class="item-images"><img src="images/client2.jpg" alt="">
-                <ul>
-                  <li> <i class="fab fa-twitter colorwhite"></i></li>
-                  <li><i class="fab fa-google-plus-g colorwhite"></i></li>
-                  <li><i class="fab fa-linkedin-in colorwhite"></i></li>
-                  <li><i class="fab fa-facebook-f colorwhite"> </i></li>
-                </ul>
-              </div>
-              <div class="team__content">
-                <h3 class="item-name text-uppercase color464646">Perla Mohammed</h3>
-                <p class="item-desc color464646">Web Designer</p>
-              </div>
-            </div>
-            <div class="team__item">
-              <div class="item-images"><img src="images/client3.jpg" alt="">
-                <ul>
-                  <li> <i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-google-plus-g"></i></li>
-                  <li><i class="fab fa-linkedin-in"></i></li>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                </ul>
-              </div>
-              <div class="team__content">
-                <h3 class="item-name text-uppercase color464646">Wiliamson</h3>
-                <p class="item-desc color464646">Ui/Ux Designer</p>
-              </div>
-            </div>
-            <div class="team__item">
-              <div class="item-images"><img src="images/client4.jpg" alt="">
-                <ul>
-                  <li> <i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-google-plus-g"></i></li>
-                  <li><i class="fab fa-linkedin-in"></i></li>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                </ul>
-              </div>
-              <div class="team__content">
-                <h3 class="item-name text-uppercase color464646">Tamer Ahmed</h3>
-                <p class="item-desc color464646">Social media</p>
-              </div>
-            </div>
-            <div class="team__item">
-              <div class="item-images"><img src="images/client1.jpg" alt="">
-                <ul>
-                  <li> <i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-google-plus-g"></i></li>
-                  <li><i class="fab fa-linkedin-in"></i></li>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                </ul>
-              </div>
-              <div class="team__content">
-                <h3 class="item-name text-uppercase color464646">Naggy Noor</h3>
-                <p class="item-desc color464646">Web Developer</p>
-              </div>
-            </div>
-            <div class="team__item">
-              <div class="item-images"><img src="images/client2.jpg" alt="">
-                <ul>
-                  <li> <i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-google-plus-g"></i></li>
-                  <li><i class="fab fa-linkedin-in"></i></li>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                </ul>
-              </div>
-              <div class="team__content">
-                <h3 class="item-name text-uppercase color464646">Perla Mohammed</h3>
-                <p class="item-desc color464646">Web Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!--End Team-->
       <!--Start Pricing-->
-      <div id="pricing">
+      <div class="section" id="pricing">
         <div class="container">
           <h1 class="pricing__title text-uppercase color464646">pricing</h1>
           <p class="pricing__desc color464646">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 animate__table">
               <div class="pricing__table animate__animated animate__fadeInLeft" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInLeft">
                 <h2 class="pricing-header color13c8c2 text-uppercase">basic</h2>
                 <h3 class="pricing-price color13c8c2">20$<span class="text-uppercase">/ Month</span></h3>
@@ -403,7 +405,7 @@
                 <button class="pricing-button btn-blue btn-style text-uppercase"> <b>Submit now</b></button>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 animate__table">
               <div class="pricing__table wow animate__animated animate__fadeInRight" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInRight">
                 <h2 class="pricing-header color13c8c2 text-uppercase">Expert</h2>
                 <h3 class="pricing-price color13c8c2">20$<span class="text-uppercase">/ Month</span></h3>
@@ -422,7 +424,7 @@
       </div>
       <!--End Pricing-->
       <!--Start Blog-->
-      <div id="blog">
+      <div class="section" id="blog">
         <div class="container">
           <h1 class="blog__title text-uppercase color464646">Latest news</h1>
           <p class="blog__desc color464646">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
@@ -441,17 +443,17 @@
             </div>
           </div>
           <div class="blog-btn">
-            <button class="btn-blue btn-style text-uppercase"> <b>show more</b></button>
+            <button class="btn-blue btn-style text-uppercase"> <a href="blog.html">show more</a></button>
           </div>
         </div>
       </div>
       <!--End Blog-->
       <!--Start Contact Us-->
-      <div id="contact-us">
+      <div class="section" id="contact-us">
         <div class="container">
           <h1 class="contact__title text-uppercase color464646">get in touch</h1>
           <p class="contact__desc color464646">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <div class="row contact-us">
+          <div class="row contact-us animate__animated animate__fadeInUp" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 2s; animation-name: fadeInUp">
             <div class="col-12 col-md-6">
               <div class="contact__info">
                 <div class="info-item"><i class="color464646 fas fa-map-marker-alt"></i>
@@ -516,9 +518,9 @@
         <p> <span class="text-uppercase">zagency &copy; 2016 </span><span>All Rights Reserved.</span></p>
       </footer>
     </div>
-    <script src="js/jquery3.3.1.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>

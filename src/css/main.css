@@ -624,6 +624,8 @@ button:hover {
       background-image: -ms-linear-gradient(top, #0f97d5, #39459b);
       background-image: -o-linear-gradient(top, #0f97d5, #39459b);
       background-image: linear-gradient(top, #0f97d5, #39459b); }
+      #portfolio .portfolio-btn button a, #portfolio .portfolio-btn button a:hover {
+        color: white; }
 
 .isotope .isotope-item {
   -webkit-transition-property: top, left, opacity;
@@ -1048,6 +1050,36 @@ button:hover {
     text-align: center; }
     #blog .blog-btn button:hover {
       transform: translateY(-10px); }
+    #blog .blog-btn a, #blog .blog-btn a:hover {
+      color: white; }
+  #blog .pagination {
+    margin-top: 30px; }
+    #blog .pagination .page-item {
+      width: 33px;
+      height: 33px;
+      border: 1px solid #ddd; }
+      #blog .pagination .page-item:last-child {
+        border-top-right-radius: .25rem;
+        border-bottom-right-radius: .25rem; }
+      #blog .pagination .page-item:first-child {
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem; }
+      #blog .pagination .page-item a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    #blog .pagination .bluebg {
+      background-color: #39459b;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#39459b), to(#0f97d5));
+      background-image: -webkit-linear-gradient(top, #39459b, #0f97d5);
+      background-image: -moz-linear-gradient(top, #39459b, #0f97d5);
+      background-image: -ms-linear-gradient(top, #39459b, #0f97d5);
+      background-image: -o-linear-gradient(top, #39459b, #0f97d5);
+      background-image: linear-gradient(top, #39459b, #0f97d5); }
+      #blog .pagination .bluebg a:hover {
+        color: white; }
 
 #contact-us {
   background-color: #f9f9f9;
@@ -1118,21 +1150,21 @@ button:hover {
     .modal-content button:hover {
       transform: translateY(-10px); }
 
-.about-top {
+.topSection {
   height: 400px;
   position: relative;
   background-image: url("../../../images/top_img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-  .about-top h1 {
+  .topSection h1 {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -60%);
     margin-bottom: 20px;
     z-index: 3; }
-  .about-top p {
+  .topSection p {
     position: absolute;
     top: 75%;
     left: 50%;
@@ -1140,12 +1172,13 @@ button:hover {
     font-size: 20px;
     z-index: 3;
     font-weight: 550; }
-    .about-top p span {
+    .topSection p span {
+      padding-left: 5px;
       font-size: 15px;
       color: rgba(0, 0, 0, 0.5); }
-    .about-top p a:hover {
+    .topSection p a:hover {
       color: #464646; }
-  .about-top::before {
+  .topSection::before {
     position: absolute;
     content: "";
     top: 0;
@@ -1154,7 +1187,7 @@ button:hover {
     height: 100%;
     background: rgba(255, 255, 255, 0.7);
     z-index: 2; }
-  .about-top::after {
+  .topSection::after {
     position: absolute;
     content: "";
     top: 0;
@@ -1218,18 +1251,56 @@ button:hover {
     position: absolute;
     top: 30%;
     left: 3%;
-    opacity: 0;
-    height: 0;
-    visibility: hidden;
-    transform: translateY(50px);
+    display: none;
     font-size: 14px;
     font-weight: 550;
-    transition: all .4s ease-in-out; }
+    -webkit-animation: fadeUp .4s ease;
+    -moz-animation: fadeUp .4s ease;
+    -ms-animation: fadeUp .4s ease;
+    -o-animation: fadeUp .4s ease;
+    animation: fadeUp .4s ease; }
   .about-story .about-accordion .about-tab.open {
+    display: block; }
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
     opacity: 1;
-    height: 100%;
-    visibility: visible;
-    transform: translateY(0); }
+    transform: translateY(0); } }
+
+@-moz-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@-ms-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@-o-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .about-desc {
   position: relative;

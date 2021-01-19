@@ -24,7 +24,7 @@
         i {
           font-size: 30px;
         }
-        &.active{
+        &.active {
           background: #0f97d5;
         }
       }
@@ -32,16 +32,16 @@
         font-size: 18px;
         font-weight: 550;
       }
-      &:hover .item-logo{
+      &:hover .item-logo {
         background: #0f97d5;
       }
-      &:hover i{
+      &:hover i {
         color: #ffffff;
       }
     }
   }
-  .about-accordion{
-    .about-filter{
+  .about-accordion {
+    .about-filter {
       display: flex;
       position: relative;
       align-items: center;
@@ -49,35 +49,39 @@
       padding-bottom: 20px;
       border-bottom: 2px solid #ccc;
       margin-bottom: 30px;
-      p{
+      p {
         font-size: 18px;
         font-weight: 550;
         margin-right: 20px;
-        &.active{
+        &.active {
           color: #0f97d5 !important;
         }
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
       }
     }
-    .about-tab{
+    .about-tab {
       position: absolute;
       top: 30%;
       left: 3%;
-      opacity: 0;
-      height: 0;
-      visibility: hidden;
-      transform: translateY(50px);
+      display: none;
       font-size: 14px;
       font-weight: 550;
-      transition: all .4s ease-in-out;
+      @include animation("fadeUp .4s ease");
     }
-    .about-tab.open{
-      opacity: 1;
-      height: 100%;
-      visibility: visible;
-      transform: translateY(0);
+    .about-tab.open {
+      display: block;
     }
+  }
+}
+@include keyframes(fadeUp) {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

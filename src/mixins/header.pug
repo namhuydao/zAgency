@@ -1,0 +1,38 @@
+mixin header(a,b,c,d,e,f,g,h)
+  #header
+      .container
+         .header__menu
+            .header__menu-logo
+               a(href="#")
+                  img(src="images/logo.png", alt="")
+            .header__menu-bar
+               i.btnToggle.fas.fa-bars
+            ul.header__menu-list
+               li.list-item
+                  a.list-item__link.showColor(href=a) Home
+               li.list-item
+                  a.list-item__link(href=b) Services
+               li.list-item
+                  a.list-item__link(href=c) Portfolio
+               li.list-item
+                  a.list-item__link(href=d) Testimonial
+               li.list-item
+                  a.list-item__link(href=e) Team
+               li.list-item
+                  a.list-item__link(href=f) Pricing
+               li.list-item
+                  a.list-item__link(href=g) News
+               li.list-item
+                  a.list-item__link(href=h) Contact Us
+               li.list-item.pages
+                  a pages
+                     i.fas.fa-sort-down
+                  ul.dropdown
+                     li
+                        a(href="about-us.html") About Us
+                     li
+                        a(href="blog.html") Blog
+                     li
+                        a(href="#") Single Blog
+                     li
+                        a(href="portfolio.html") Portfolio

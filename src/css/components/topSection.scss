@@ -1,4 +1,4 @@
-.about-top {
+.topSection {
   height: 400px;
   position: relative;
   background-image: url("../../../images/top_img.jpg");
@@ -22,6 +22,7 @@
     z-index: 3;
     font-weight: 550;
     span{
+      padding-left: 5px;
       font-size: 15px;
       color: rgba(0,0,0,.5);
     }
