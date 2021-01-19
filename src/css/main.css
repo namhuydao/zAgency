@@ -851,7 +851,7 @@ button:hover {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       #pricing .pricing__table {
         margin-bottom: 2rem; } }
     #pricing .pricing__table .pricing-header {
@@ -872,7 +872,7 @@ button:hover {
   #pricing .adv-table {
     transform: translate(0, -1rem);
     box-shadow: 0 19px 19px -10px rgba(0, 0, 0, 0.3); }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       #pricing .adv-table {
         box-shadow: none;
         transform: none; } }
